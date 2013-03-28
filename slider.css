@@ -1,0 +1,141 @@
+/***** slider styles ************************************************************/
+
+.slider {
+    width: 980px;
+}
+
+.buttons{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.goodbutton, .goodbutton:visited{
+    background: #222 url(images/alert-overlay.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+}
+
+.goodbutton:hover {
+    background-color: #111; color: #fff;
+}
+.goodbutton:active {
+    top: 1px;
+}
+
+.green.goodbutton, .green.goodbutton:visited {
+    background-color: #91bd09;
+}
+.green.goodbutton:hover	{
+    background-color: #749a02;
+}
+
+/* Стили для вертикального аккордеона */
+.va-container{
+    position:relative;
+    margin:10px auto 0 auto;
+    background-color: #f3f4ef; border: 1px solid #dedede; padding: 5px;
+}
+.va-wrapper{
+    width: 970px;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    background:#000;
+}
+.va-slice{
+    cursor:pointer;
+    position:absolute;
+    width:100%;
+    left: 0;
+    overflow:hidden;
+}
+.va-slice-1{
+    background:#000 url(images/slider/code.png) no-repeat center center;
+}
+.va-slice-2{
+    background:#000 url(images/slider/design.jpg) no-repeat center center;
+}
+.va-slice-3{
+    background:#000 url(images/slider/seo.jpg) no-repeat center center;
+}
+.va-slice-color-1{
+    background-color:#97c5eb;
+}
+.va-slice-color-2{
+    background-color:#68ace5;
+}
+.va-slice-color-3{
+    background-color:#0072cf;
+}
+
+.va-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform:uppercase;
+    font-size:60px;
+    margin-left:20px;
+    color:#fff;
+    text-shadow: 0 0 1px white;
+}
+.va-content{
+    display:none;
+    margin-left:25px;
+}
+.va-slice p{
+    font-size: 22px;
+    font-style: italic;
+    font-family:Georgia, serif;
+}
+.va-slice ul{
+    margin-top:20px;
+}
+.va-slice ul li{
+    float:left;
+    margin: 0 2px;
+}
+.va-slice ul li a{
+    color:#000;
+    background:#a4c531;
+    padding:3px 6px;
+    font-size:14px;
+    font-family:'PT Sans', sans-serif;
+    text-transform:uppercase;
+}
+.va-slice ul li a:hover{
+    background:#000;
+    color:#fff;
+    text-shadow:none;
+}
+.va-nav span{
+    width:40px;
+    height:25px;
+    background:transparent url(images/slider/prev.png) no-repeat center center;
+    position:absolute;
+    top:-35px;
+    left:50%;
+    margin-left:-20px;
+    text-indent:-9000px;
+    opacity:0.7;
+    cursor:pointer;
+    display:none;
+    z-index:100;
+}
+.va-nav span.va-nav-next{
+    background-image:url(images/slider/next.png);
+    top:auto;
+    bottom:-35px;
+}
+.va-nav span:hover{
+    opacity:1.0;
+}
+
+/***** end of slider styles ************************************************************/
